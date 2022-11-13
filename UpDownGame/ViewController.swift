@@ -35,7 +35,26 @@ class ViewController: UIViewController {
     }
 
     @IBAction func checkButtonMethod(_ sender: UIButton) {
+        curTry += 1
+        curTryLabel.text = "\(curTry)/5"
         
+        if curValue == goalValue {
+            showAlert("You Win!!!")
+            reset()
+            return
+        } else if curTry >= 5 {
+            showAlert("You Lose...")
+            reset()
+            return
+        } else if curValue > goalValue {
+            maxValue = curValue
+            slider.maximumValue = Float(maxValue)
+            maxLabel.text = "\(maxValue)"
+        } else if curValue < goalValue {
+            minValue = curValue
+            slider.minimumValue = Float(minValue)
+            minLabel.text = "\(minValue)"
+        }
     }
     
     @IBAction func resetButtonMethod(_ sender: UISlider) {
@@ -56,6 +75,13 @@ class ViewController: UIViewController {
         maxLabel.text = "\(maxValue)"
         curValueLabel.text = "\(curValue)"
         curTryLabel.text = "\(curTry)/5"
+    }
+    
+    func showAlert(_ message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default) { (action) in self.reset() }
+        alert.addAction(action)
+        present(alert, animated: true)
     }
     
 }

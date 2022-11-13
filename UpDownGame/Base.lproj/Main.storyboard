@@ -24,6 +24,9 @@
                                 </constraints>
                                 <color key="minimumTrackTintColor" systemColor="systemGray5Color"/>
                                 <color key="maximumTrackTintColor" systemColor="systemGray5Color"/>
+                                <connections>
+                                    <action selector="sliderValueChangeMethod:" destination="BYZ-38-t0r" eventType="valueChanged" id="PSL-bA-2hm"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OH-tp-Udr">
                                 <rect key="frame" x="379.66666666666669" y="241.33333333333334" width="85" height="54.666666666666657"/>
