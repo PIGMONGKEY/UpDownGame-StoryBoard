@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94BEA3EA2921123700281C4B /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BEA3E92921123700281C4B /* CreditViewController.swift */; };
 		94FC5B682920055A00EE6317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FC5B672920055A00EE6317 /* AppDelegate.swift */; };
 		94FC5B6A2920055A00EE6317 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FC5B692920055A00EE6317 /* SceneDelegate.swift */; };
 		94FC5B6C2920055A00EE6317 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FC5B6B2920055A00EE6317 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94BEA3E92921123700281C4B /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
 		94FC5B642920055A00EE6317 /* UpDownGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpDownGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FC5B672920055A00EE6317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94FC5B692920055A00EE6317 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				94FC5B702920055B00EE6317 /* Assets.xcassets */,
 				94FC5B722920055B00EE6317 /* LaunchScreen.storyboard */,
 				94FC5B752920055B00EE6317 /* Info.plist */,
+				94BEA3E92921123700281C4B /* CreditViewController.swift */,
 			);
 			path = UpDownGame;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				94FC5B6C2920055A00EE6317 /* ViewController.swift in Sources */,
 				94FC5B682920055A00EE6317 /* AppDelegate.swift in Sources */,
 				94FC5B6A2920055A00EE6317 /* SceneDelegate.swift in Sources */,
+				94BEA3EA2921123700281C4B /* CreditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
