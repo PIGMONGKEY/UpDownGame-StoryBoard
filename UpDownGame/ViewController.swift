@@ -26,19 +26,29 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         slider.setThumbImage(UIImage(imageLiteralResourceName: "slider_thumb"), for: .normal)
+        reset()
+    }
+    
+    @IBAction func sliderValueChangeMethod(_ sender: UISlider) {
+        curValue = Int(sender.value)
+        curValueLabel.text = "\(curValue)"
     }
 
     @IBAction func checkButtonMethod(_ sender: UIButton) {
         
     }
     
-    @IBAction func resetButtonMethod(_ sender: UIButton) {
+    @IBAction func resetButtonMethod(_ sender: UISlider) {
+        reset()
+    }
+    
+    func reset() {
         goalValue = Int.random(in: 0...30)
         minValue = 0
         maxValue = 30
         curValue = 15
         curTry = 0
-        
+                
         slider.minimumValue = 0
         slider.maximumValue = 30
         slider.value = 15

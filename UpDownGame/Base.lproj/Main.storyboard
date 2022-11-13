@@ -34,6 +34,9 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                     </preferredSymbolConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="checkButtonMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WSg-5s-yTt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrW-gs-uha">
                                 <rect key="frame" x="784.66666666666663" y="87" width="60" height="41"/>
@@ -45,7 +48,7 @@
                                     </preferredSymbolConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="resetButtonMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EHx-4I-X48"/>
+                                    <action selector="resetButtonMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iQP-dX-Bbr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xi-qF-IFk">
@@ -113,6 +116,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="curTryLabel" destination="n2w-tM-BuY" id="IQ7-fy-llb"/>
+                        <outlet property="curValueLabel" destination="LDN-tm-a0N" id="NOH-Wv-Iud"/>
+                        <outlet property="maxLabel" destination="ugq-TJ-m5P" id="QHQ-4B-Y05"/>
+                        <outlet property="minLabel" destination="ZwJ-KD-XoV" id="Vei-VI-lHc"/>
                         <outlet property="slider" destination="CDh-Nl-ad0" id="S1y-Q7-NSW"/>
                     </connections>
                 </viewController>
